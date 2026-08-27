@@ -368,6 +368,11 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
   letter-spacing: 0.045em;
 }
 .recording-focus { margin-bottom: 3.5rem; }
+.recording-focus > h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
 .recording-focus h3 { margin-top: 2rem; }
 .source-note { color: var(--muted); font-size: 0.92rem; }
 
