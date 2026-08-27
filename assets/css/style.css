@@ -283,6 +283,11 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
   border: 0;
   border-top: 1px solid var(--line);
 }
+.prose hr + h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
 .prose blockquote {
   margin: 3.2rem 0 1rem;
   padding: 0;
@@ -431,6 +436,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
   .page-shell { padding: 3.8rem 0 6rem; grid-template-columns: 1fr; gap: 3rem; }
   .page-header { position: static; }
   .page-header h1 { font-size: clamp(3.5rem, 16vw, 5.4rem); }
+  .discography-page .prose > ol { padding-left: 1.5rem; }
   .prose { font-size: 1.04rem; }
   .prose h2 { margin-top: 3.2rem; }
   .site-footer__inner { padding: 2rem 0; min-height: 0; align-items: flex-start; flex-direction: column; }
