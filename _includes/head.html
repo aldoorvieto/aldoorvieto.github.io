@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% assign current_lang = page.lang | default: site.lang | default: "it" %}
+  {% if current_lang == "en" %}
+    {% assign site_description = site.description_en %}
+    {% assign site_tagline = site.tagline_en %}
+    {% assign italian_url = page.alternate_url | default: "/studio/" %}
+    {% assign english_url = page.url %}
+  {% else %}
+    {% assign site_description = site.description_it %}
+    {% assign site_tagline = site.tagline_it %}
+    {% assign italian_url = page.url %}
+    {% assign english_url = page.alternate_url | default: "/studio/en/" %}
+  {% endif %}
+
+  {% assign meta_title = page.title | default: site.title %}
+  {% assign meta_description = page.description | default: page.intro | default: site_description %}
+
+  <title>{% if page.layout == "home" %}{{ site.title }} — {{ page.role | default: site_tagline }}{% elsif page.layout == "wip" %}{{ site.title }}{% else %}{{ meta_title }} — {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ meta_description | strip_html | strip_newlines | escape }}">
+  <meta name="theme-color" content="#f3f0e9">
+  <meta name="color-scheme" content="light">
+  {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+
+  {% if site.url != "" and page.layout != "wip" %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="it" href="{{ italian_url | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="{{ english_url | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ italian_url | absolute_url }}">
+  {% endif %}
+
+  <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>

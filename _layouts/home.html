@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% if page.lang == "en" %}
+  {% assign biography_label = "Biography" %}
+  {% assign biography_url = "/studio/en/biography/" %}
+  {% assign discography_label = "Discography" %}
+  {% assign discography_url = "/studio/en/discography/" %}
+  {% assign fields = "Twentieth-century music · Chamber music · New music" %}
+{% else %}
+  {% assign biography_label = "Biografia" %}
+  {% assign biography_url = "/studio/biografia/" %}
+  {% assign discography_label = "Discografia" %}
+  {% assign discography_url = "/studio/discografia/" %}
+  {% assign fields = "Novecento · Musica da camera · Nuove musiche" %}
+{% endif %}
+<section class="home-hero">
+  <div class="home-hero__copy">
+    <p class="eyebrow">{{ page.role }}</p>
+    <h1><span>Aldo</span><span>Orvieto</span></h1>
+    <div class="home-lead">{{ content }}</div>
+    <nav class="home-actions" aria-label="{% if page.lang == 'en' %}Featured pages{% else %}Pagine in evidenza{% endif %}">
+      <a href="{{ biography_url | relative_url }}">{{ biography_label }}</a>
+      <a href="{{ discography_url | relative_url }}">{{ discography_label }}</a>
+    </nav>
+  </div>
+  <figure class="home-portrait">
+    <img src="{{ page.portrait | relative_url }}" alt="{{ page.portrait_alt | escape }}" width="1120" height="1400">
+  </figure>
+</section>
+<div class="home-fields" aria-label="{{ fields }}"><p>{{ fields }}</p></div>

@@ -1,0 +1,56 @@
+# Aldo Orvieto — GitHub Pages / Jekyll
+# Italian is the default language. The public root is a work-in-progress page.
+# The complete preview site begins at /studio/ and is deliberately not linked from the root.
+
+title: "Aldo Orvieto"
+lang: "it"
+tagline_it: "Pianista"
+tagline_en: "Pianist"
+description_it: "Aldo Orvieto, pianista. Biografia, concerti, discografia e attività artistica."
+description_en: "Aldo Orvieto, pianist. Biography, concerts, discography, and artistic activity."
+
+# Keep these blank for a user site repository named USERNAME.github.io.
+# For a project repository, follow the baseurl note in README.md.
+url: ""
+baseurl: ""
+
+permalink: pretty
+markdown: kramdown
+
+navigation_it:
+  - title: "Biografia"
+    url: "/studio/biografia/"
+  - title: "Concerti"
+    url: "/studio/concerti/"
+  - title: "Discografia"
+    url: "/studio/discografia/"
+  - title: "Attività"
+    url: "/studio/attivita/"
+  - title: "Contatti"
+    url: "/studio/contatti/"
+
+navigation_en:
+  - title: "Biography"
+    url: "/studio/en/biography/"
+  - title: "Concerts"
+    url: "/studio/en/concerts/"
+  - title: "Discography"
+    url: "/studio/en/discography/"
+  - title: "Activity"
+    url: "/studio/en/activity/"
+  - title: "Contact"
+    url: "/studio/en/contact/"
+
+social:
+  spotify: "https://open.spotify.com/artist/0hZlAuITmgFJBCMAH3neDX"
+  apple_music: "https://music.apple.com/us/artist/aldo-orvieto/166184928"
+  youtube: "https://www.youtube.com/channel/UCCumV1ASgc7jABEMMPBSCvg"
+  instagram: ""
+
+contact_email: "aldoorvieto@gmail.com"
+
+exclude:
+  - README.md
+  - HOW-ALDO-UPDATES.md
+  - CONTENT-SOURCES.md
+  - .gitignore

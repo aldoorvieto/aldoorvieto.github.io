@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'it' }}">
+  {% include head.html %}
+  <body class="layout-{{ page.layout | default: 'default' }}{% if page.page_class %} {{ page.page_class }}{% endif %}">
+    {% include header.html %}
+    <main id="content">{{ content }}</main>
+    {% include footer.html %}
+  </body>
+</html>

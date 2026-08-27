@@ -1,0 +1,39 @@
+{% assign current_lang = page.lang | default: site.lang | default: "it" %}
+{% if current_lang == "en" %}
+  {% assign home_url = "/studio/en/" %}
+  {% assign navigation = site.navigation_en %}
+  {% assign skip_label = "Skip to content" %}
+  {% assign nav_label = "Main navigation" %}
+  {% assign language_label = "Language" %}
+  {% assign italian_url = page.alternate_url | default: "/studio/" %}
+  {% assign english_url = page.url %}
+{% else %}
+  {% assign home_url = "/studio/" %}
+  {% assign navigation = site.navigation_it %}
+  {% assign skip_label = "Vai al contenuto" %}
+  {% assign nav_label = "Navigazione principale" %}
+  {% assign language_label = "Lingua" %}
+  {% assign italian_url = page.url %}
+  {% assign english_url = page.alternate_url | default: "/studio/en/" %}
+{% endif %}
+
+<a class="skip-link" href="#content">{{ skip_label }}</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-name" href="{{ home_url | relative_url }}">Aldo Orvieto</a>
+
+    <nav class="primary-navigation" aria-label="{{ nav_label }}">
+      <ul>
+        {% for item in navigation %}
+          <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <nav class="language-navigation" aria-label="{{ language_label }}">
+      <a href="{{ italian_url | relative_url }}" lang="it" hreflang="it"{% if current_lang == "it" %} aria-current="page"{% endif %}>IT</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ english_url | relative_url }}" lang="en" hreflang="en"{% if current_lang == "en" %} aria-current="page"{% endif %}>EN</a>
+    </nav>
+  </div>
+</header>

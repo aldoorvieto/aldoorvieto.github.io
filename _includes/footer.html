@@ -1,0 +1,19 @@
+{% if page.lang == "en" %}
+  {% assign profile_label = "Listening profiles" %}
+  {% assign contact_label = "Email" %}
+{% else %}
+  {% assign profile_label = "Profili di ascolto" %}
+  {% assign contact_label = "Email" %}
+{% endif %}
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>© {{ site.time | date: "%Y" }} Aldo Orvieto</p>
+    <nav class="footer-links" aria-label="{{ profile_label }}">
+      {% if site.social.spotify != "" %}<a href="{{ site.social.spotify }}">Spotify</a>{% endif %}
+      {% if site.social.apple_music != "" %}<a href="{{ site.social.apple_music }}">Apple Music</a>{% endif %}
+      {% if site.social.youtube != "" %}<a href="{{ site.social.youtube }}">YouTube</a>{% endif %}
+      {% if site.social.instagram != "" %}<a href="{{ site.social.instagram }}">Instagram</a>{% endif %}
+      <a href="mailto:{{ site.contact_email }}">{{ contact_label }}</a>
+    </nav>
+  </div>
+</footer>
