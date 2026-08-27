@@ -349,7 +349,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
   padding-top: 1rem;
   border-top: 1px solid var(--line);
   font-family: var(--serif);
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(2.5rem, 3.6vw, 4rem);
   letter-spacing: -0.03em;
   line-height: 1.05;
   list-style: none;
@@ -361,9 +361,9 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
   margin-left: 1rem;
   color: var(--muted);
   font-family: var(--sans);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  line-height: 2.2;
+  line-height: 3;
 }
 .discography-section[open] summary::after { content: "–"; }
 .discography-section[open] summary { margin-bottom: 1.35rem; }
