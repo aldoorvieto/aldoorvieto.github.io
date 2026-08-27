@@ -38,6 +38,49 @@ noindex: true
 **Classical Music Daily**, sull’integrale pianistica di Niccolò Castiglioni  
 [Recensioni Grand Piano / Naxos](https://www.naxos.com/Review/Detail/?catalogueid=GP862&languageid=EN)
 
+> «C’è un pianista a Venezia. Si chiama Aldo Orvieto. Super. Molto sensibile ai richiami del contemporaneo.»
+
+**Mario Gamba**, *Il Manifesto — Alias*, 20 gennaio 2024, sui CD Castiglioni (Grand Piano), Malipiero vol. 3 e Fano (Stradivarius)
+
+> «Un grande pianista che ci restituisce un musicista geniale.»
+
+**Marco Maria Tosolini**, *Il Gazzettino*, 18 maggio 2024, sull’integrale pianistica di Niccolò Castiglioni (Grand Piano)
+
+> “Aldo Orvieto, who specializes in 20th Century Italian music, plays in a lucid, sharply chiseled style, perfect for the brasher pieces; in the lyrical ones he has a warm legato.”
+
+**Jack Sullivan**, *American Record Guide*, marzo 2023, su *Castiglioni: Complete Piano Works 1* (Grand Piano GP862)  
+[Leggi la recensione](https://www.naxos.com/Review/Detail/?catalogueid=GP862&languageid=EN)
+
+> “Aldo Orvieto is a charismatic and virtuosic guide for the two piano-led works.”
+
+**Richard Hanlon**, *MusicWeb International*, aprile 2021, su *Gervasoni: Muro di Canti* (Kairos)  
+[Leggi la recensione](http://www.musicweb-international.com/classrev/2021/Apr/Gervasoni-muro-0015082KAI.htm)
+
+> «Le esecuzioni di Aldo Orvieto sono inappuntabili e precisissime sono le note del booklet.»
+
+**Piero Rattalino**, *Musica* n. 318, luglio–agosto 2020, su *Malipiero: Complete Piano Music 1* (Stradivarius)
+
+> «Impeccabili le interpretazioni del bravissimo Aldo Orvieto.»
+
+**Paolo Petazzi**, *Classic Voice*, “Disco del mese”, 2016, su *Gervasoni: Le Pré* (Winter & Winter)
+
+> “Orvieto plays all this music effortlessly and handles the stylistic variety with the same assurance.”
+
+**Rob Haskins**, *American Record Guide*, gennaio 2014, su *Togni: Complete Piano Music 1* (Naxos)  
+[Leggi la recensione](https://www.naxos.com/Review/Detail/?catalogueid=8.572990&languageid=EN)
+
+> “Orvieto does a superb job of voicing his chords to bring out the piquant harmonies. Schub can’t touch him in this respect.”
+
+**Joseph Magil**, *American Record Guide*, gennaio–febbraio 2004, sul CD Strawinsky con Dora Bratchkova (cpo)
+
+> «Guida, sostegno quando serve, traino quando preteso dalla musica, compagno di via sempre, mai mero accompagnatore.»
+
+**Bernardo Pieri**, *Musica* n. 375, aprile 2026, su *Autumnal Gold* con Sara Mingardo (Stradivarius)
+
+> «Ancora grazie, con tutta la mia ammirazione: a Lei come musicista, come interprete superlativo, come combattente per la musica.»
+
+**Quirino Principe**, lettera all’artista, 20 maggio 2021
+
 ---
 
 Per fotografie in alta risoluzione, biografia breve e materiali stampa: [contatti]({{ '/studio/contatti/' | relative_url }}).

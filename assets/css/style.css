@@ -239,15 +239,15 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
   grid-template-columns: minmax(16rem, 0.58fr) minmax(0, 1fr);
   gap: clamp(3rem, 9vw, 10rem);
 }
-.page-header { align-self: start; position: sticky; top: 2rem; }
+.page-header { align-self: start; position: sticky; top: 2rem; container-type: inline-size; }
 .page-header h1 {
   margin-bottom: 1.7rem;
   font-family: var(--serif);
-  font-size: clamp(3.6rem, 7vw, 7.2rem);
+  font-size: clamp(3.6rem, 7vw, 7.2rem); /* fallback without container queries */
+  font-size: clamp(2.75rem, 16cqw, 7.2rem);
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 0.88;
-  overflow-wrap: anywhere;
 }
 .page-intro {
   max-width: 28rem;

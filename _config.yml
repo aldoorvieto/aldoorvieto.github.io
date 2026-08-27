@@ -26,6 +26,8 @@ navigation_it:
     url: "/studio/discografia/"
   - title: "Attività"
     url: "/studio/attivita/"
+  - title: "Stampa"
+    url: "/studio/stampa/"
   - title: "Contatti"
     url: "/studio/contatti/"
 
@@ -38,6 +40,8 @@ navigation_en:
     url: "/studio/en/discography/"
   - title: "Activity"
     url: "/studio/en/activity/"
+  - title: "Press"
+    url: "/studio/en/press/"
   - title: "Contact"
     url: "/studio/en/contact/"
 
@@ -51,6 +55,9 @@ contact_email: "aldoorvieto@gmail.com"
 
 exclude:
   - README.md
+  - AGENTS.md
   - HOW-ALDO-UPDATES.md
   - CONTENT-SOURCES.md
+  - FILE-MANIFEST.txt
+  - TransferNow-MATERIALI
   - .gitignore
