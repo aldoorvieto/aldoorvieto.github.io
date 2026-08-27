@@ -14,7 +14,7 @@ Bilingual (IT default, EN) Jekyll site for GitHub Pages. No JavaScript, framewor
 - `index.md` — public root page, a deliberate work-in-progress placeholder (layout `wip`). Not linked to the preview.
 - `studio/` — the complete hidden preview site. Keep this folder structure until launch (see "Making the complete site public later" in `README.md`).
 - `studio/en/` — English version. Every Italian page must have an English counterpart (and vice versa); when editing one, update the other.
-- `_includes/discography-list.md` — the full discography, shared by both `studio/discografia.md` and `studio/en/discography.md`. Edit in one place only. The "Integrali pianistiche / Complete Piano Works" section lives in the two page files themselves (customer request, Aug 2026) — keep IT and EN in sync.
+- `_includes/discography-list.md` — the full discography, shared by both `studio/discografia.md` and `studio/en/discography.md`. Edit in one place only. Each label section is a collapsible `<details class="discography-section">` block; the continuous 1–101 numbering is produced by CSS counter offsets in `assets/css/style.css` (`.discography-section:nth-of-type(N)`) — update the offsets there when adding/removing entries. The "Integrali pianistiche / Complete Piano Works" section lives in the two page files themselves (customer request, Aug 2026) — keep IT and EN in sync.
 - `_layouts/`, `_includes/` (head/header/footer), `assets/css/style.css` — single design system.
 
 ## Front matter conventions (see `studio/biografia.md` for a model)

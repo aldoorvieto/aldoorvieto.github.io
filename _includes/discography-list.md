@@ -2,13 +2,11 @@
   DISCOGRAFIA COMPLETA — file Markdown condiviso dalle pagine italiana e inglese.
   Per aggiungere una nuova uscita, inserire il numero successivo nella sezione corretta.
   L’elenco deriva dal documento “Aldo Orvieto Discografia 07.2026 - (editori).doc”.
+  Ogni sezione è un blocco <details> espandibile: mantenere la struttura summary + lista.
 -->
 
-{% if page.lang == "en" %}
-## Naxos, Grand Piano and other labels
-{% else %}
-## Naxos, Grand Piano e altre etichette
-{% endif %}
+<details class="discography-section" markdown="1">
+<summary>{% if page.lang == "en" %}Naxos, Grand Piano and other labels{% else %}Naxos, Grand Piano e altre etichette{% endif %}</summary>
 
 1. **Naxos 8.572074** — C. Togni: Sonate per flauto e pianoforte e per violino e pianoforte, Morts sans sepulture per voce e pianoforte (con Lorna Windsor e Ex Novo Ensemble)
 2. **Naxos 8.572642** — B. Maderna: Concerto (1941) per pianoforte e orchestra: Concerto (1946) per due pianoforti e strumenti (Orchestra dell’Arena di Verona, direttore Carlo Miotto
@@ -35,11 +33,10 @@
 23. **ARTS** — G. Rossini: Opere da camera (con Ex Novo Ensemble)
 24. **HOMMAGE – 7001891-2-3** — K. A. Hartmann / V. Ullmann, Opere per pianoforte
 
-{% if page.lang == "en" %}
-## Stradivarius
-{% else %}
-## Stradivarius
-{% endif %}
+</details>
+
+<details class="discography-section" markdown="1">
+<summary>Stradivarius</summary>
 
 25. **Stradivarius STR33395** — G. F. Ghedini: Opere per pianoforte e da camera (con Rodolfo e Arturo Bonucci)
 26. **Stradivarius STR 33502** — G. F. Malipiero: Opere da camera (con M. Rapetti, A. Vio, T. Campagnaro).
@@ -76,11 +73,10 @@
 57. **Stradivarius STR 37155** — Autumnal Gold (Johannes Brahms, Gustav Mahler): Lieder. Con Sara Mingardo, contralto, Danusha Waskiewicz, viola
 58. **Stradivarius STR 37339** — Mirco De Stefani: Canzoni del giardino incantato, con Barbara Zanuchelli,, soprano.
 
-{% if page.lang == "en" %}
-## Dynamic
-{% else %}
-## Dynamic
-{% endif %}
+</details>
+
+<details class="discography-section" markdown="1">
+<summary>Dynamic</summary>
 
 59. **Dynamic CDS 220** — J. N. Hummel: Opere per violino/viola e pianoforte (con Luigi Alberto Bianchi) (riedizione 2011 con numero di catalogo CDS 554/1-6)
 60. **Dynamic CDS 286** — J. N. Hummel: Opere per violoncello e pianoforte (con Arturo Bonucci) (riedizione 2007 con numero di catalogo CDS 554/1-6)
@@ -95,11 +91,10 @@
 69. **Dynamic CDS 97** — B. Maderna / G. Tailleferre, Opere da camera (con R. Maioli, Támittam Ens.)
 70. **Dynamic CDS 7765** — D. Cimarosa/ F. Bertoni/A. Sacchini/I. Gerace/J. Schuster/G. Gazzaniga/ P. Anfossi, Arie composte per le “figlie del Coro” degli Ospedali dei Mendicanti e dell’Ospedaletto (con Susanna Armani)
 
-{% if page.lang == "en" %}
-## Other labels
-{% else %}
-## Altre etichette
-{% endif %}
+</details>
+
+<details class="discography-section" markdown="1">
+<summary>{% if page.lang == "en" %}Other labels{% else %}Altre etichette{% endif %}</summary>
 
 71. **Classic Voice 126** — F. Schubert, I capolavori dell’ultimo anno (con Ex Novo Ensemble)
 72. **Fonit Cetra NFCD 2034** — K. A. Hartmann / V. Ullmann, Opere per pianoforte
@@ -130,19 +125,19 @@
 97. **VENOW code 001** — C. Ambrosini, Trobar Clus, per pianoforte e 12 strumenti (con Ex Novo Ensemble, Claudio Ambrosini, direttore)
 98. **Wide Classique WCL164** — A. Schnittke – B. Martinu – W. A. Mozart – S. Prokofiev – M Kogoj: Opere per violino e pianoforte (con Grazia Raimondi, violino – Special guest: Luigi Piovano)
 
-{% if page.lang == "en" %}
-## DVD
-{% else %}
-## DVD
-{% endif %}
+</details>
+
+<details class="discography-section" markdown="1">
+<summary>DVD</summary>
 
 99. **Stradivarius 33854** — L. Berio – Ivan Fedele: Opere per due pianoforti, percussioni e elettronica (con Maria Grazia Bellocchio e Daniele Roi, pianoforti, Paolo Parolini, Arrigo Axia, percussioni, Alvise Vidolin, regia sonora e live electronics) nel contesto del progetto Finito Illimitato – Viaggio temporale cosmologico allo sviluppo dell’universo.
 100. **Stradivarius 33973** — N. Sani: No Landscape per pianoforte e elettronica (con Alvise Vidolin, regia sonora e live electronics) nel contesto del progetto Chemical free (?) un viaggio nel microcosmo della materia.
 
-{% if page.lang == "en" %}
-## Digital release
-{% else %}
-## Pubblicazione digitale
-{% endif %}
+</details>
+
+<details class="discography-section" markdown="1">
+<summary>{% if page.lang == "en" %}Digital release{% else %}Pubblicazione digitale{% endif %}</summary>
 
 101. **SZ SUGAR** — I. Fedele: Con Figura, Opere per pianoforte ed elettronica (con Alvise Vidolin, Paolo Zavagna, Simone Conforti) – su alcuni siti il disco è riportato come (DECCA 0928252).
+
+</details>

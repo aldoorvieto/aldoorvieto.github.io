@@ -343,25 +343,60 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
-.discography-page .prose > ol {
-  margin: 0 0 4.5rem;
+.discography-section { margin-bottom: 2.2rem; }
+.discography-section summary {
+  cursor: pointer;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  list-style: none;
+}
+.discography-section summary::-webkit-details-marker { display: none; }
+.discography-section summary::after {
+  content: "+";
+  float: right;
+  margin-left: 1rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.2;
+}
+.discography-section[open] summary::after { content: "–"; }
+.discography-section[open] summary { margin-bottom: 1.35rem; }
+/* Continuous 1–101 numbering across sections: each list counts with a
+   custom counter, offset per section (24, 58, 70, 98, 100 items before
+   each). Update these if entries are added or removed. */
+.discography-section ol { counter-reset: disc 0; }
+.discography-section:nth-of-type(2) ol { counter-reset: disc 24; }
+.discography-section:nth-of-type(3) ol { counter-reset: disc 58; }
+.discography-section:nth-of-type(4) ol { counter-reset: disc 70; }
+.discography-section:nth-of-type(5) ol { counter-reset: disc 98; }
+.discography-section:nth-of-type(6) ol { counter-reset: disc 100; }
+.discography-page .prose ol {
+  margin: 0;
   padding: 0;
   list-style-position: outside;
 }
-.discography-page .prose > ol li {
+.discography-page .prose ol li {
   margin: 0;
   padding: 1rem 0 1rem 0.45rem;
   border-top: 1px solid var(--line-soft);
   line-height: 1.48;
+  counter-increment: disc;
 }
-.discography-page .prose > ol li:last-child { border-bottom: 1px solid var(--line-soft); }
-.discography-page .prose > ol li::marker {
+.discography-page .prose ol li:last-child { border-bottom: 1px solid var(--line-soft); }
+.discography-page .prose ol li::marker {
+  content: counter(disc) ".";
   color: var(--muted);
   font-family: var(--sans);
   font-size: 0.65rem;
   font-variant-numeric: tabular-nums;
 }
-.discography-page .prose > ol strong {
+.discography-page .prose ol strong {
   font-family: var(--sans);
   font-size: 0.74rem;
   font-weight: 600;
@@ -441,7 +476,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
   .page-shell { padding: 3.8rem 0 6rem; grid-template-columns: 1fr; gap: 3rem; }
   .page-header { position: static; }
   .page-header h1 { font-size: clamp(3.5rem, 16vw, 5.4rem); }
-  .discography-page .prose > ol { padding-left: 1.5rem; }
+  .discography-page .prose ol { padding-left: 1.5rem; }
   .prose { font-size: 1.04rem; }
   .prose h2 { margin-top: 3.2rem; }
   .site-footer__inner { padding: 2rem 0; min-height: 0; align-items: flex-start; flex-direction: column; }
